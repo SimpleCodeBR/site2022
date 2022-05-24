@@ -1,0 +1,158 @@
+@media screen and (max-width: 768px) {
+	h1,
+	h2 {
+		font-size: 40px !important;
+	}
+
+	.hero {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.hero img {
+		width: 98% !important;
+		margin-top: 96px;
+	}
+
+	.margin-32,
+	.margin-64,
+	.margin-80 {
+		margin-top: 16px;
+	}
+
+	.quem-somos {
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.quem-somos div {
+		padding: 0 16px 0 16px;
+		width: 100%;
+	}
+
+	.servicos div {
+		padding: 32px;
+	}
+
+	.expertise {
+		padding: 32px 0 32px 0;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.expertise p {
+		max-width: 100%;
+	}
+
+	.ideia div {
+		padding: 0 16px 0 16px;
+	}
+
+	.ideia img {
+		width: 98% !important;
+	}
+
+	.form {
+		padding: 0 16px 0 16px;
+	}
+
+	input[type='text'],
+	input[type='email'],
+	textarea {
+		width: 320px;
+	}
+
+	.orcamento {
+		width: 98%;
+	}
+
+	.pretty {
+		width: 94%;
+	}
+
+	.success {
+		padding: 16px;
+	}
+
+	footer {
+		display: none !important;
+	}
+
+	.direitos {
+		margin-top: 80px;
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	h1 {
+		font-size: 48px;
+	}
+
+	.navegacao {
+		background-color: #fff;
+		flex-direction: column;
+		gap: 32px !important;
+		padding: 32px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 300px;
+		width: 300px;
+		z-index: 1;
+	}
+
+	.redes-sociais {
+		background-color: #fff;
+		padding: 32px;
+		position: absolute;
+		top: 300px;
+		right: 0;
+		width: 300px;
+		z-index: 1;
+	}
+
+	.controles-mobile {
+		display: block !important;
+	}
+
+	.close {
+		position: absolute;
+		top: 32px;
+		right: 32px;
+		z-index: 2;
+	}
+
+	.hero img {
+		width: 376px;
+	}
+
+	.quem-somos {
+		gap: 16px;
+	}
+
+	.servicos {
+		flex-direction: column;
+	}
+
+	.servicos div {
+		width: 100%;
+	}
+
+	.ideia {
+		flex-direction: column-reverse;
+		gap: 32px;
+	}
+
+	.ideia div {
+		width: 100%;
+	}
+
+	.ideia div:last-child {
+		text-align: center;
+	}
+
+	.produtos {
+		display: none !important;
+	}
+}

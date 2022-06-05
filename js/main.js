@@ -1,3 +1,5 @@
+AOS.init();
+
 let token = '';
 
 function onRecaptchaSuccess(response) {
@@ -105,6 +107,9 @@ async function onSend() {
 		const company = document.querySelector('#empresa').value;
 		const idea = document.querySelector('#ideia').value;
 		const proposal = document.querySelector('#orcamento').checked;
+		const button = document.querySelector('#enviar');
+
+		button.textContent = 'Enviando...';
 
 		const faleconosco = {
 			Nome: name,
@@ -139,6 +144,7 @@ async function onSend() {
 
 			if (window.grecaptcha) grecaptcha.reset();
 
+			button.textContent = 'Enviar mensagem';
 			document.querySelector('.success').classList.remove('hide');
 		}
 	}

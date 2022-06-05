@@ -19,9 +19,10 @@
     <meta name="author" content="Vanessa Ortega">
     <title>SimpleCode - Design e desenvolvimento de sistemas web e aplicativos</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
     <script src="https://kit.fontawesome.com/c94c9e523a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -71,12 +72,12 @@
     <section class="container margin-80">
         <h2>Nós somos a <span class="yellow">SimpleCode</span></h2>
         <div class="quem-somos margin-80">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="500">
                 <h3>
                     Nós criamos aplicativos e sistemas para a web de maneira descomplicada e podemos ajudar sua empresa a trazer uma ideia para o mundo real.
                 </h3>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <p>
                     Oferecemos consultoria no desenvolvimento de sistemas. Criamos soluções do zero totalmente customizadas que vão de encontro com suas ideias. Desenhamos estas soluções junto com você, partindo daquilo que é mais importante para o seu negócio. Se seu tempo é precioso vamos nos focar, juntos, no que realmente importa.
                 </p>
@@ -87,14 +88,14 @@
     <section class="container margin-80">
         <h2>Nossos serviços</h2>
         <div class="servicos margin-80">
-            <div>
+            <div data-aos="fade-up" data-aos-duration="500">
                 <i class="fa-solid fa-palette yellow"></i>
                 <h3>Web design</h3>
                 <p>
                     De wireframe a protótipo de alta fidelidade responsivo e interativo, entregamos aquilo que a etapa do seu projeto precisa na ferramenta de sua escolha: Adobe XD, Sketch App ou Figma. E, claro, implementamos os arquivos de design em HTML5 e CSS3 limpos e responsivos.
                 </p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <i class="fa-solid fa-laptop-code yellow"></i>
                 <h3>Desenvolvimento</h3>
                 <p>
@@ -116,7 +117,7 @@
     </section>
     <section class="container margin-80">
         <h2>Você tem uma <span class="yellow">ideia</span>?</h2>
-        <div class="ideia margin-80">
+        <div class="ideia margin-80" data-aos="fade-up" data-aos-duration="750">
             <div>
                 <p>
                     Somos especialistas em web design responsivo, aplicações web sob medida, aplicativos mobile e todo o processo e etapas que envolvem cada um destes projetos. Aqui tem design + desenvolvimento em um só lugar. Desde 2008. Você tem uma <span class="highlight">ideia?</span> Nós temos a <span class="highlight">implementação.</span> Fale conosco!
@@ -131,7 +132,7 @@
     <section class="container margin-80">
         <h2>Design. Desenvolvimento. Em um só lugar.</h2>
         <h2 class="yellow">Fale conosco</h2>
-        <div class="form margin-16">
+        <div class="form margin-16" data-aos="fade-up" data-aos-duration="750">
             <p>
                 Todos os campos são obrigatórios.
             </p>
@@ -176,7 +177,7 @@
                 <small id="recaptcha"></small>
             </div>
             <div class="margin-16">
-                <button onclick="onSend()">Enviar mensagem</button>
+                <button onclick="onSend()" name="enviar" id="enviar">Enviar mensagem</button>
             </div>
             <div class="margin-16 success hide">
                 Sua mensagem foi enviada! Em breve entraremos em contato.
@@ -253,6 +254,7 @@
             </button>
         </p>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 

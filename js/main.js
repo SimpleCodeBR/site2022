@@ -1,5 +1,6 @@
 AOS.init();
 
+/*
 let token = '';
 
 function onRecaptchaSuccess(response) {
@@ -184,6 +185,7 @@ document.querySelector('textarea').addEventListener('keyup', function () {
 
 	current.textContent = characterCount;
 });
+*/
 
 function abrirMenu() {
 	document.querySelector('.navegacao').classList.remove('hide');

@@ -43,6 +43,10 @@ p {
 	line-height: 32px;
 }
 
+.center {
+	text-align: center;
+}
+
 .yellow {
 	color: #fabe0e;
 }

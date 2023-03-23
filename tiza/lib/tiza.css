@@ -35,11 +35,11 @@ img {
 }
 
 /* Marcadores */
-ul {
+.bullet {
 	list-style: none;
 }
 
-li::before {
+.bullet li::before {
 	content: '-';
 	padding-right: 6px;
 }

@@ -7,7 +7,7 @@
 
 body {
 	background-color: #474e5d;
-	background-image: url("blur.jpg");
+	background-image: url('blur.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -15,8 +15,9 @@ body {
 	font-family: 'Nunito', sans-serif;
 }
 
-a, a:link {
-	color: #FABE0E;
+a,
+a:link {
+	color: #6ba3f8;
 	text-decoration: none;
 }
 
@@ -33,6 +34,16 @@ img {
 	text-decoration: none;
 }
 
+/* Marcadores */
+ul {
+	list-style: none;
+}
+
+li::before {
+	content: '-';
+	padding-right: 6px;
+}
+
 /* Timeline */
 .timeline {
 	border-left: 4px solid #fff;
@@ -43,39 +54,39 @@ img {
 	line-height: 1.4em;
 	padding: 50px;
 	list-style: none;
-	max-width: 56%;	
+	max-width: 56%;
 }
 
-	.timeline .event {
-		padding: 20px;
-		margin-bottom: 50px;
-		position: relative;
-		background-color: #fff;
-	}
+.timeline .event {
+	padding: 20px;
+	margin-bottom: 50px;
+	position: relative;
+	background-color: #fff;
+}
 
-		.timeline .event:before,
-		.timeline .event:after {
-			position: absolute;
-			display: block;
-			top: 0;
-		}
+.timeline .event:before,
+.timeline .event:after {
+	position: absolute;
+	display: block;
+	top: 0;
+}
 
-		.timeline .event:before {
-			left: -217.5px;
-			/*content: attr(data-date);*/
-			text-align: right;
-			min-width: 120px;
-			color: #fff;
-			font-weight: bold;
-		}
+.timeline .event:before {
+	left: -217.5px;
+	/*content: attr(data-date);*/
+	text-align: right;
+	min-width: 120px;
+	color: #fff;
+	font-weight: bold;
+}
 
-		.timeline .event:after {
-			box-shadow: 0 0 0 4px #fff;
-			left: -57.85px;
-			background: #FABE0E;
-			border-radius: 50%;
-			height: 11px;
-			width: 11px;
-			content: "";
-			top: 5px;
-		}
+.timeline .event:after {
+	box-shadow: 0 0 0 4px #fff;
+	left: -57.85px;
+	background: #6ba3f8;
+	border-radius: 50%;
+	height: 11px;
+	width: 11px;
+	content: '';
+	top: 5px;
+}

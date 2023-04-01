@@ -12,7 +12,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #333;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a,
@@ -73,11 +73,10 @@ img {
 
 .timeline .event:before {
 	left: -217.5px;
-	/*content: attr(data-date);*/
+	content: attr(data-date);
 	text-align: right;
 	min-width: 120px;
 	color: #fff;
-	font-weight: bold;
 }
 
 .timeline .event:after {
